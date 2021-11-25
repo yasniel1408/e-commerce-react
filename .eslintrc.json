@@ -1,20 +1,34 @@
 {
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "sourceType": "module",
-        "allowImportExportEverywhere": false,
-        "codeFrame": false
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
     },
-    "extends": ["airbnb", "plugin:prettier/recommended", "plugin:@typescript-eslint/recommended", "plugin:jsx-a11y/recommended"],
-    "plugins": ["babel", "react", "jsx-a11y", "import", "react-hooks", "prettier"],
-    "env": {
-        "es6": true,
-        "node": true,
-        "browser": true
-    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "jsx-a11y",
+        "import",
+        "react-hooks",
+        "prettier"
+    ],
     "rules": {
         "prettier/prettier": ["error", { "endOfLine": "auto" }, { "usePrettierrc": true }],
         "import/no-unresolved": ["off"],
+        "import/extensions":["off"],
+        "react/function-component-definition":["off"],
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-filename-extension": ["off"],
         "react/forbid-prop-types": "off",
@@ -25,7 +39,8 @@
         "react/jsx-closing-bracket-location": "off",
         "import/no-cycle": "off",
         "no-use-before-define": ["off"],
-        "no-console": ["warn"],
+        "no-console": ["error"],
+        "react/require-default-props": ["error"],
         "react/prop-types": ["error"],
         "import/no-absolute-path": ["off"],
         "max-len": ["error", { "code": 100 }],
@@ -40,6 +55,7 @@
                 "min": 3,
                 "exceptions": ["id", "e", "i", "me"]
             }
-        ]
+        ],
+        "react/default-props-match-prop-types": ["error", { "allowRequiredDefaults": true }]
     }
 }
