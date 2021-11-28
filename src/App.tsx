@@ -1,17 +1,13 @@
 import React from 'react';
+import { Error404, Home } from 'pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from 'pages/Home';
 
-const App = function () {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <h1>HOLAA</h1>
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   );
