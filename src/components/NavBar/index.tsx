@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
@@ -10,7 +10,7 @@ const NavBar: FC = () => {
       <Menubar
         model={items}
         start={<InputText placeholder="Search" type="text" />}
-        end={<Button label="Logout" icon="pi pi-power-off" />}
+        end={<Button label="Checkout" icon="pi pi-power-off" />}
       />
     </div>
   );

@@ -1,10 +1,17 @@
-import React from 'react';
+import { ProductItem } from 'components';
+import { DivGrid } from 'containers';
+import products from 'redux/initialState';
 
 const Home = () => {
   return (
-    <div>
-      <h1>HOLA MUNDO</h1>
-    </div>
+    <>
+      <h1 className="">Products</h1>
+      <DivGrid>
+        {products?.products.map(({ id, ...data }: any) => (
+          <ProductItem key={id} {...data} />
+        ))}
+      </DivGrid>
+    </>
   );
 };
 

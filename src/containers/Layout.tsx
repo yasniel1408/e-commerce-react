@@ -1,4 +1,5 @@
 import { Footer, NavBar } from 'components';
+import { LayoutSection } from 'containers';
 import { FC } from 'react';
 
 type AppProps = {
@@ -7,11 +8,11 @@ type AppProps = {
 
 const Layout: FC<AppProps> = ({ children }) => {
   return (
-    <div>
+    <main>
       <NavBar />
-      {children}
+      <LayoutSection>{children}</LayoutSection>
       <Footer />
-    </div>
+    </main>
   );
 };
 

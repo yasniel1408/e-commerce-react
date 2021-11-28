@@ -1,10 +1,12 @@
-import React from 'react';
 import { Panel } from 'primereact/panel';
+import { DivCenterContent } from 'containers';
 
 const Footer = () => {
   return (
     <Panel>
-      <p>Develop: Ing. Yasniel Fajardo Egues</p>
+      <DivCenterContent>
+        <p>Develop: Ing. Yasniel Fajardo Egues</p>
+      </DivCenterContent>
     </Panel>
   );
 };

@@ -1,6 +1,5 @@
-import React from 'react';
 import { Layout } from 'containers';
-import { Error404, Home, Login } from 'pages';
+import { Error404, Home } from 'pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -9,8 +8,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<Error404 />} />
+          <Route element={<Error404 />} />
         </Routes>
       </Layout>
     </BrowserRouter>
