@@ -1,5 +1,4 @@
-import React from 'react';
-import { Error404, Home } from 'pages';
+import { Error404, Home, Login } from 'pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -7,6 +6,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
