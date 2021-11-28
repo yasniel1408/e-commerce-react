@@ -7,11 +7,11 @@ type AppProps = {
 
 const Layout: FC<AppProps> = ({ children }) => {
   return (
-    <>
+    <div>
       <NavBar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 

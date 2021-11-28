@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 type AppProps = {
   children: any;
 };
 
-const BoxFlexCenter: FC<AppProps> = ({ children }) => {
+const DivCenterContent: FC<AppProps> = ({ children }) => {
   return (
     <div
       style={{
@@ -20,4 +20,4 @@ const BoxFlexCenter: FC<AppProps> = ({ children }) => {
   );
 };
 
-export default BoxFlexCenter;
+export default DivCenterContent;

@@ -1,7 +1,7 @@
+import React, { FC } from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-import { FC } from 'react';
 import items from './items';
 
 const NavBar: FC = () => {

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Layout } from 'containers';
 import { Error404, Home, Login } from 'pages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
