@@ -67,7 +67,7 @@
     "pretty-quick": "^3.1.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
+    "src/**/*.{ts,tsx}": [
       "pretty-quick --staged",
       "git add"
     ]
