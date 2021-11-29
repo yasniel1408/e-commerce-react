@@ -5,12 +5,12 @@ type AppProps = {
   children: ReactNode;
 };
 
-const LayoutSection: FC<AppProps> = ({ children }) => {
-  return <Div>{children}</Div>;
-};
-
-const Div = styled.div`
-  padding: '1rem';
+const StyledDiv = styled.div`
+  padding: 1rem;
 `;
+
+const LayoutSection: FC<AppProps> = ({ children }) => {
+  return <StyledDiv>{children}</StyledDiv>;
+};
 
 export default LayoutSection;
