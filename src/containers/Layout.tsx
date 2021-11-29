@@ -1,9 +1,9 @@
 import { Footer, NavBar } from 'components';
 import { LayoutSection } from 'containers';
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 type AppProps = {
-  children: any;
+  children: ReactNode;
 };
 
 const Layout: FC<AppProps> = ({ children }) => {

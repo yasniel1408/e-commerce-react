@@ -1,7 +1,7 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 type AppProps = {
-  children: any;
+  children: ReactNode;
 };
 
 const DivGrid: FC<AppProps> = ({ children }) => {

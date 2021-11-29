@@ -1,11 +1,16 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
+import styled from 'styled-components';
 
 type AppProps = {
-  children: any;
+  children: ReactNode;
 };
 
 const LayoutSection: FC<AppProps> = ({ children }) => {
-  return <div style={{ padding: '1rem' }}>{children}</div>;
+  return <Div>{children}</Div>;
 };
+
+const Div = styled.div`
+  padding: '1rem';
+`;
 
 export default LayoutSection;
